@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import {
   Container,
-  Divider,
-  Dropdown,
   Grid,
   Header,
   Image,
@@ -12,8 +10,7 @@ import {
   Menu,
   Segment,
   Button,
-  Table,
-  Label
+  Table
 } from 'semantic-ui-react'
 import logo from './logo.png';
 const XLSX = require("xlsx");
@@ -37,7 +34,7 @@ seterror(false)
     }
     catch(e){
         seterror(true)
-        seterrorDetails(e)
+        
     }
     
     
@@ -45,7 +42,6 @@ seterror(false)
 }
 
 const [error, seterror] = useState(false)
-const [errorDetails, seterrorDetails] = useState("")
 const [open, setOpen] = React.useState(false)
 
     return (
